@@ -1,5 +1,5 @@
 {
-  "name": "canvi",
+  "name": "@insightmedia/canvi",
   "version": "1.0.0",
   "description": "A simple vanilla JavaScript off-canvas menu.",
   "main": "./js/canvi.js",
@@ -36,5 +36,13 @@
     "@babel/core": "^7.18.6",
     "babel-register": "^6.26.0",
     "esprima": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insight-media/canvi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/insight-media/canvi/issues"
+  },
+  "homepage": "https://github.com/insight-media/canvi#readme"
 }
