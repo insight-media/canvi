@@ -1,4 +1,4 @@
-var gulp = require('gulp'), 
+var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	uglify = require('gulp-uglify'),
 	prefix = require('gulp-autoprefixer'),
@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 	strip = require('gulp-strip-comments'),
 	wait = require('gulp-wait');
 
-gulp.task('sass', function () {  
+gulp.task('sass', async function () {
 	gulp.src('./scss/canvi.scss')
         .pipe(wait(700))
 		.pipe(sass({includePaths: ['./scss/partials']}))
@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('js', function(){
+gulp.task('js', async function(){
 	gulp.src('./js/*.js')
 		.pipe(strip())
 		.pipe(babel({
@@ -33,7 +33,7 @@ gulp.task('js', function(){
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('js-webpack', function(){
+gulp.task('js-webpack', async function(){
 	gulp.src('./js/*.js')
 		.pipe(strip())
 		.pipe(rename({
@@ -44,7 +44,7 @@ gulp.task('js-webpack', function(){
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['sass', 'js', 'js-webpack'], function () {  
+gulp.task('default', gulp.series('sass', 'js', 'js-webpack'), function () {
 	gulp.watch('scss/**/*.scss', ['sass']);
 	gulp.watch('./js/*.js', ['js']);
 });
