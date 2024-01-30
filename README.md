@@ -15,10 +15,10 @@ To install Canvi get the JS and the CSS file and insert into your project. You c
 <script src="dist/canvi.js"></script>
 ```
 
-You can also use Canvi in webpack based projects using canvi-webpack.js with import.
+You can also import Canvi.
 
 ```
-import Canvi from 'dist/canvi-webpack';
+import Canvi from 'dist/canvi';
 ```
 
 ## Basic Usage
