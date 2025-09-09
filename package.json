@@ -2,7 +2,7 @@
   "name": "canvi.js",
   "version": "2.0.0",
   "description": "A simple vanilla JavaScript off-canvas menu.",
-  "main": "./dist/canvi.js",
+  "main": "./dist/canvi.js.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
