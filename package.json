@@ -1,6 +1,6 @@
 {
   "name": "canvi.js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A simple vanilla JavaScript off-canvas menu.",
   "main": "./dist/canvi.js.mjs",
   "scripts": {

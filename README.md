@@ -7,7 +7,7 @@ Canvi is a simple off-canvas navigation with a few parameters to configure. You 
 You can import Canvi.
 
 ```
-import Canvi from 'canvi.js/canvi'
+import Canvi from 'canvi.js'
 ```
 
 ```
