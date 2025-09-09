@@ -1,29 +1,22 @@
 # Canvi - A simple vanilla JavaScript off-canvas navigation
 
-[Official page](https://pineco.de/project/canvi-off-canvas-navigation/)
-
 ## Introduction, installation
 
-Canvi is a simple off-canvas navigation with a few parameter to configure. You can init multiple instances, set responsive width, use your style our Canvi's style.
+Canvi is a simple off-canvas navigation with a few parameters to configure. You can init multiple instances, set responsive width, use your style our Canvi's style.
 
-To install Canvi get the JS and the CSS file and insert into your project. You can also customize the Sass to save some byte.
-
-```html
-// To the head
-<link rel="stylesheet" href="dist/canvi.css">
-// To the end of the body
-<script src="dist/canvi.js"></script>
-```
-
-You can also import Canvi.
+You can import Canvi.
 
 ```
-import Canvi from 'dist/canvi';
+import Canvi from 'canvi.js/canvi'
+```
+
+```
+@import "canvi.js/dist/canvi.css";
 ```
 
 ## Basic Usage
 
-To use Canvi first, you have to implement the correct HTML structure which is mean the proper use of the .canvi-navbar and .canvi-content.
+To use Canvi first, you have to implement the correct HTML structure which is the proper use of the .canvi-navbar and .canvi-content.
 
 ```html
 <!DOCTYPE html>
@@ -59,13 +52,6 @@ var canviRight = new Canvi({
     openButton: '.js-canvi-open-button--right'
 });
 ```
-
-## Accessibility
-
-Canvi using aria-hidden="true" when the navigation is hidden. If you want to be more accesible you can use the inert attribute - which is also used by Canvi - but for this you need to use [this polyfill](https://github.com/WICG/inert) because it is quite a new feature. Just simply insert the script into your project.
-
-If you like to know more about inert check out [A11ycats #2 episode](https://youtu.be/fGLp_gfMMGU)!
-
 
 ## Options
 
